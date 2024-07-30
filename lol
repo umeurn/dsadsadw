@@ -1,4 +1,3 @@
-
 local settings = {
     PointSlot = 'Slot1',
     NamekianSlot = 'Slot3',
@@ -191,7 +190,7 @@ local function doStuff(): ()
             chatA:FireServer({[1] = 'k'})
             task.wait(.35)
             chatA:FireServer({[1] = 'DRINK'})
-            task.wait(0.1)
+            task.wait(1)
             char:BreakJoints()
             task.wait(5)
         else
@@ -200,7 +199,7 @@ local function doStuff(): ()
             speedChat({[1] = 'Yes'}, 'Alright')
             speedChat({[1] = 'k'}, 'Which slot would you like to play in?')
             speedChat({[1] = settings.PointSlot}, 'Loading!', .2)
-            task.wait(0.2)
+            task.wait(.130)
             chatS:FireServer(kami.Chat)
             chatA:FireServer({[1] = 'k'})
 
