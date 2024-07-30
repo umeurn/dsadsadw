@@ -192,7 +192,7 @@ local function doStuff(): ()
             chatA:FireServer({[1] = 'DRINK'})
             task.wait(0.01)
             char:BreakJoints()
-            task.wait(5)
+            task.wait(2)
         else
             chatS:FireServer(npcs:FindFirstChild('Character Slot Changer'))
 
@@ -244,7 +244,7 @@ while true do task.wait(3.5)
         until os.time() - t >= 20
 
         plr.Character:BreakJoints()
-        task.wait(8)
+        task.wait(4)
         nextPhase = true
     end)
 
@@ -258,14 +258,14 @@ end-- Script to prevent player movement
 local character = game.Players.LocalPlayer.Character
 
 -- Anchor the character
-character.HumanoidRootPart.Anchored = false
+character.HumanoidRootPart.Anchored = true
 
 -- Disable the player's movement abilities
 character.Humanoid.WalkSpeed = 0
 character.Humanoid.JumpPower = 0
 
 -- Prevent the player from teleporting
-character.HumanoidRootPart.CanCollide = true
+character.HumanoidRootPart.CanCollide = false
 
 -- Loop to keep the character anchored
 while true do
