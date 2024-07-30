@@ -199,7 +199,7 @@ local function doStuff(): ()
             speedChat({[1] = 'Yes'}, 'Alright')
             speedChat({[1] = 'k'}, 'Which slot would you like to play in?')
             speedChat({[1] = settings.PointSlot}, 'Loading!', .2)
-            task.wait(.130)
+            task.wait(.1)
             chatS:FireServer(kami.Chat)
             chatA:FireServer({[1] = 'k'})
 
