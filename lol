@@ -258,14 +258,14 @@ end-- Script to prevent player movement
 local character = game.Players.LocalPlayer.Character
 
 -- Anchor the character
-character.HumanoidRootPart.Anchored = true
+character.HumanoidRootPart.Anchored = false
 
 -- Disable the player's movement abilities
 character.Humanoid.WalkSpeed = 0
 character.Humanoid.JumpPower = 0
 
 -- Prevent the player from teleporting
-character.HumanoidRootPart.CanCollide = false
+character.HumanoidRootPart.CanCollide = true
 
 -- Loop to keep the character anchored
 while true do
