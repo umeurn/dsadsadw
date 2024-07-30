@@ -224,7 +224,7 @@ local function doStuff(): ()
 
         speedChat({[1] = 'Yes'}, 'Alright')
         speedChat({[1] = 'k'}, 'Which slot would you like to play in?')
-        speedChat({[1] = settings.NamekianSlot}, 'Loading!', .1)
+        speedChat({[1] = settings.NamekianSlot}, 'Loading!', 0.1)
     end
 
     nextPhase = true
