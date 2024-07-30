@@ -190,7 +190,7 @@ local function doStuff(): ()
             chatA:FireServer({[1] = 'k'})
             task.wait(.35)
             chatA:FireServer({[1] = 'DRINK'})
-            task.wait(1)
+            task.wait(0.1)
             char:BreakJoints()
             task.wait(5)
         else
