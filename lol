@@ -1,3 +1,4 @@
+
 local settings = {
     PointSlot = 'Slot1',
     NamekianSlot = 'Slot3',
@@ -190,9 +191,9 @@ local function doStuff(): ()
             chatA:FireServer({[1] = 'k'})
             task.wait(.35)
             chatA:FireServer({[1] = 'DRINK'})
-            task.wait(0.01)
-            char:BreakJoints()
             task.wait(2)
+            char:BreakJoints()
+            task.wait(5)
         else
             chatS:FireServer(npcs:FindFirstChild('Character Slot Changer'))
 
@@ -224,7 +225,7 @@ local function doStuff(): ()
 
         speedChat({[1] = 'Yes'}, 'Alright')
         speedChat({[1] = 'k'}, 'Which slot would you like to play in?')
-        speedChat({[1] = settings.NamekianSlot}, 'Loading!', 0.1)
+        speedChat({[1] = settings.NamekianSlot}, 'Loading!', .1)
     end
 
     nextPhase = true
@@ -244,7 +245,7 @@ while true do task.wait(3.5)
         until os.time() - t >= 20
 
         plr.Character:BreakJoints()
-        task.wait(4)
+        task.wait(8)
         nextPhase = true
     end)
 
